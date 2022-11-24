@@ -17,6 +17,11 @@ function Groups() {
 
             <div className="row" id="standings">
                 <Group/>
+                <Group/>
+                <Group/>
+                <Group/>
+                <Group/>
+                <Group/>
             </div>
         </div>
     </React.Fragment>
