@@ -16,12 +16,12 @@ function Groups() {
             </div>
 
             <div className="row" id="standings">
-                <Group/>
-                <Group/>
-                <Group/>
-                <Group/>
-                <Group/>
-                <Group/>
+                <Group grp="A"/>
+                <Group grp="B"/>
+                <Group grp="C"/>
+                <Group grp="D"/>
+                <Group grp="E"/>
+                <Group grp="F"/>
             </div>
         </div>
     </React.Fragment>

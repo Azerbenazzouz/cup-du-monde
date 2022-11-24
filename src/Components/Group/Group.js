@@ -1,13 +1,13 @@
 import React from 'react'
 import Team from '../Team/Team'
 
-function Group() {
+function Group({grp}) {
   return (
     <React.Fragment>
         <div className="col-sm-6 mb-4">
             <div class="card shadow border-none">
                 <div class="card-header bg-primary" style={{"textAlign":"center"}}>
-                    <b>Group (A)</b>
+                    <b>Group_{grp}</b>
                 </div>
                 <div class="row m-0 bg-secondary">
                     <div class="col-lg-4" style={{"textAlign":"center"}}>
