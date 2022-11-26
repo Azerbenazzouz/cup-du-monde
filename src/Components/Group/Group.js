@@ -5,24 +5,24 @@ function Group({grp}) {
   return (
     <React.Fragment>
         <div className="col-sm-6 mb-4">
-            <div class="card shadow border-none">
-                <div class="card-header bg-primary" style={{"textAlign":"center"}}>
+            <div className="card shadow border-none">
+                <div className="card-header bg-primary" style={{"textAlign":"center"}}>
                     <b>Group_{grp}</b>
                 </div>
-                <div class="row m-0 bg-secondary">
-                    <div class="col-lg-4" style={{"textAlign":"center"}}>
+                <div className="row m-0 bg-secondary">
+                    <div className="col-lg-4" style={{"textAlign":"center"}}>
                         team
                     </div>
-                    <div class="col-lg-2">
+                    <div className="col-lg-2">
                         W
                     </div>
-                    <div class="col-lg-2">
+                    <div className="col-lg-2">
                         L
                     </div>
-                    <div class="col-lg-2">
+                    <div className="col-lg-2">
                         D
                     </div>
-                    <div class="col-lg-2">
+                    <div className="col-lg-2">
                         Pts
                     </div>
                 </div>
