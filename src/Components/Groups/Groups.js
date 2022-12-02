@@ -1,9 +1,8 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Group from '../Group/Group'
 import {Data} from './Data'
 
 function Groups() {
-    const [standing, setStandings] = useState(Data.standings)
     //data
     // console.log(standing)
   return (
@@ -20,7 +19,7 @@ function Groups() {
             </div>
 
             <div className="row" id="standings">
-                {standing?.map((group,id) => {return <Group key={id} grp={group.group} data={group.table}/>})}
+                {Data.standings?.map((group,id) => {return <Group key={id} grp={group.group} data={group.table}/>})}
             </div>
         </div>
     </React.Fragment>
