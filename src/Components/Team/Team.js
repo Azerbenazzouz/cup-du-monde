@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Team({img,team,w,l,d,pts}) {
+function Team({img,team,win,lose,draw,points}) {
     return (
         <React.Fragment>
             <li className="list-group-item">
@@ -14,16 +14,16 @@ function Team({img,team,w,l,d,pts}) {
                         </h5>
                     </div>
                     <div className="col-lg-2" style={{"margin":"auto auto"}}>
-                        {w}
+                        {win}
                     </div>
                     <div className="col-lg-2" style={{"margin":"auto auto"}}>
-                        {l}
+                        {lose}
                     </div>
                     <div className="col-lg-2" style={{"margin":"auto auto"}}>
-                        {d}
+                        {draw}
                     </div>
                     <div className="col-lg-2" style={{"margin":"auto auto"}}>
-                        <b>{pts}</b>
+                        <b>{points}</b>
                     </div>
                 </div>
             </li>

@@ -1,7 +1,8 @@
 import React from 'react'
 import Team from '../Team/Team'
 
-function Group({grp}) {
+function Group({grp,data}) {
+    console.log(data[0].won)
   return (
     <React.Fragment>
         <div className="col-sm-6 mb-4">
@@ -28,40 +29,13 @@ function Group({grp}) {
                 </div>
 
                 <ul className="list-group list-group-flush">
-                    {/* TEAM */}
-                        <Team 
-                            img="https://th.bing.com/th/id/R.7c3b2f2f451f32890ecb413ce7ddc529?rik=3nrRSVyfub5q8g&pid=ImgRaw&r=0" 
-                            team="TUN" 
-                            w="4" 
-                            l="1" 
-                            d="0" 
-                            pts="9"
-                        />
-                        <Team 
-                            img="https://th.bing.com/th/id/R.7c3b2f2f451f32890ecb413ce7ddc529?rik=3nrRSVyfub5q8g&pid=ImgRaw&r=0" 
-                            team="TUN" 
-                            w="4" 
-                            l="1" 
-                            d="0" 
-                            pts="9"
-                        />
-                        <Team 
-                            img="https://th.bing.com/th/id/R.7c3b2f2f451f32890ecb413ce7ddc529?rik=3nrRSVyfub5q8g&pid=ImgRaw&r=0" 
-                            team="TUN" 
-                            w="4" 
-                            l="1" 
-                            d="0" 
-                            pts="9"
-                        />
-                        <Team 
-                            img="https://th.bing.com/th/id/R.7c3b2f2f451f32890ecb413ce7ddc529?rik=3nrRSVyfub5q8g&pid=ImgRaw&r=0" 
-                            team="TUN" 
-                            w="4" 
-                            l="1" 
-                            d="0" 
-                            pts="9"
-                        />
-                    {/* TEAM */}
+                    {data?.map((team,id) => {return <Team key={id}
+                                                     team={team.team.tla} 
+                                                     win={team.won} 
+                                                     lose={team.lost} 
+                                                     draw={team.draw} 
+                                                     points={team.points} 
+                                                     img={team.team.crest}/>})}
                 </ul>
             </div>
         </div>
